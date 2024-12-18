@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,7 +19,7 @@
                 android:id="@+id/tvSwiggy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Swiggy"
+                android:text="Taaza"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="24sp"/>
@@ -66,8 +66,8 @@
                 android:elevation="4dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_width="180dp"
+                    android:layout_height="150dp"
                     android:src="@drawable/burger"
                     />
 
@@ -93,11 +93,12 @@
                 android:orientation="vertical"
                 android:background="#FFFFFF"
                 android:padding="8dp"
+                android:elevation="4dp"
                 >
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_width="180dp"
+                    android:layout_height="150dp"
                     android:src="@drawable/instamart"
                     />
 
@@ -117,6 +118,55 @@
                     android:textSize="12sp"/>
             </LinearLayout>
         </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recommended Cusines"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#ffffff">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="American"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="#FF5722"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Italian"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="#FF5722"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chinese"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="#FF5722"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arabian"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="#FF5722"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="French"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="#FF5722"/>
+            </LinearLayout>
+        </HorizontalScrollView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -133,43 +183,142 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_width="100dp"
+                    android:orientation="horizontal"
+                    android:background="#ffffff"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/cheesy"
-                        android:padding="2dp"/>
-                    <ImageView
-                        android:layout_width="100dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/cheesy"
+                            android:padding="2dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CHEESY BURGER"
+                            android:textSize="10dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="60% off"
+                            android:textColor="#FF5722"
+                            android:textSize="10dp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/fish"
-                        android:padding="2dp"/>
-                    <ImageView
-                        android:layout_width="100dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/fish"
+                            android:padding="2dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SALMON"
+                            android:textSize="10dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="60% off"
+                            android:textColor="#FF5722"
+                            android:textSize="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/pancake2"
-                        android:padding="2dp"/>
-                    <ImageView
-                        android:layout_width="100dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/pancake2"
+                            android:padding="2dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="HONEY PANCAKE"
+                            android:textSize="10dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="60% off"
+                            android:textColor="#FF5722"
+                            android:textSize="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/burger"
-                        android:padding="2dp"/>
-                    <ImageView
-                        android:layout_width="100dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/burger"
+                            android:padding="2dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="BURGER"
+                            android:textSize="10dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="60% off"
+                            android:textColor="#FF5722"
+                            android:textSize="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/pudding"
-                        android:padding="2dp"/>
-                    <ImageView
-                        android:layout_width="100dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/pudding"
+                            android:padding="2dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="BLUE BERRY PUDDING"
+                            android:textSize="10dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="60% off"
+                            android:textColor="#FF5722"
+                            android:textSize="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/fish"
-                        android:padding="2dp"/>
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/pancake2"
+                            android:padding="2dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CHEESY BURGER"
+                            android:textSize="10dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="60% off"
+                            android:textColor="#FF5722"
+                            android:textSize="10dp"/>
+                    </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>
 
@@ -182,48 +331,226 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="8dp"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#FFFFFF"
-            android:padding="12dp"
-            >
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="80dp"
-                android:src="@drawable/restaurent"
-                />
-
+            android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingStart="12dp">
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                >
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Plan B"
-                    android:textStyle="bold"
-                    android:textSize="16sp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/restaurent"
+                    />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="American · Continental   ₹1200 for two"
-                    android:textSize="12sp"
-                    android:textColor="#666"/>
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pizza Hut"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="American · Continental   ₹1200 for two"
+                        android:textSize="12sp"
+                        android:textColor="#666"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flat 15% off on walk-in"
+                        android:textColor="#4CAF50"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/restaurent"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Flat 15% off on walk-in"
-                    android:textColor="#4CAF50"
-                    android:textSize="12sp"/>
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Burger Inn"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="American · Continental   ₹1200 for two"
+                        android:textSize="12sp"
+                        android:textColor="#666"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flat 15% off on walk-in"
+                        android:textColor="#4CAF50"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/restaurent"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dhaba"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="American · Continental   ₹1200 for two"
+                        android:textSize="12sp"
+                        android:textColor="#666"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flat 15% off on walk-in"
+                        android:textColor="#4CAF50"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/restaurent"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chinese Wok"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="American · Continental   ₹1200 for two"
+                        android:textSize="12sp"
+                        android:textColor="#666"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flat 15% off on walk-in"
+                        android:textColor="#4CAF50"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/restaurent"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dominos"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="American · Continental   ₹1200 for two"
+                        android:textSize="12sp"
+                        android:textColor="#666"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flat 15% off on walk-in"
+                        android:textColor="#4CAF50"
+                        android:textSize="12sp"/>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+    </ScrollView>
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -245,28 +572,33 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Order food online in Bangalore"
-                        android:layout_margin="8dp"/>
+                        android:layout_margin="8dp"
+                        android:backgroundTint="#FF5722"/>
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Order food online in Gurgaon"
-                        android:layout_margin="8dp"/>
+                        android:layout_margin="8dp"
+                        android:backgroundTint="#FF5722"/>
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Order food online in Gurgaon"
-                        android:layout_margin="8dp"/>
+                        android:text="Order food online in Gurugram"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="#FF5722"/>
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Order food online in Gurgaon"
-                        android:layout_margin="8dp"/>
+                        android:text="Order food online in Kochi"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="#FF5722"/>
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Order food online in Gurgaon"
-                        android:layout_margin="8dp"/>
+                        android:text="Order food online in Chennai"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="#FF5722"/>
                 </LinearLayout>
             </HorizontalScrollView>
     </LinearLayout>
